@@ -55,3 +55,22 @@ clearAllBtn.addEventListener("click", function () {
 
 
 
+
+// let btn = document.querySelector('button');
+// let text =document.querySelector('input');
+// let list = document.querySelector('ul');
+// btn.addEventListener("click", function() {
+//     let item =document.createElement('li');
+//     item.textContent = text.value;
+//     // console.log("Button clicked");
+//     item.addEventListener("click", ()=>{
+//         item.classList.toggle('done')
+//       //  item.remove();
+//     });
+
+//     list.append(item);
+// });
+
+
+
+

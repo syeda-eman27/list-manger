@@ -1,13 +1,14 @@
 let btn = document.querySelector('button');
 let text = document.querySelector('input');
 let list = document.querySelector('ul');
+let clearAllBtn = document.getElementById('clear-all');
 
+// Add task functionality
 btn.addEventListener("click", function () {
-    // if (text.value.trim() === "") {
-    //     alert("Please enter a task!");
-    //     return;
-    // }
-
+    if (text.value.trim() === "") {
+        alert("Please enter a task!");
+        return;
+    }
     let item = document.createElement('li');
     item.classList.add('list-item');
     let taskText = document.createElement('span');
@@ -25,9 +26,11 @@ btn.addEventListener("click", function () {
     list.appendChild(item);
     text.value = "";
 });
-
-
-
+clearAllBtn.addEventListener("click", function () {
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+});
 
 
 

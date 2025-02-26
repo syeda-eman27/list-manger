@@ -1,0 +1,24 @@
+.done {
+    background-color: goldenrod;
+    text-decoration: line-through;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.remove-icon {
+    cursor: pointer;
+    color: red;
+}
+#clear-all {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
